@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.assignment2.NewGame">
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOff="Red Player's turn"
+        android:textOn="Yellow Player's turn"
+        android:clickable="false"/>
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.david.assignment2.InputFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        tools:layout="@layout/user_input_fragment"/>
+
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.david.assignment2.BoardViewFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        tools:layout="@layout/board_fragment"/>
+    <Button
+        android:id="@+id/checkWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="check winner" />
+
+</android.widget.RelativeLayout>

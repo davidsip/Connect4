@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Click a column below to drop token"
+        android:layout_marginVertical="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/column0"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="V0"
+            android:layout_marginLeft="5dp"/>
+        <Button
+            android:id="@+id/column1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="V1"
+            android:layout_marginLeft="5dp"/>
+        <Button
+            android:id="@+id/column2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="V2"
+            android:layout_marginLeft="5dp"/>
+        <Button
+            android:id="@+id/column3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="V3"
+            android:layout_marginLeft="5dp"/>
+        <Button
+            android:id="@+id/column4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="V4"/>
+        <Button
+            android:id="@+id/column5"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="V5"
+            android:layout_marginLeft="5dp"/>
+        <Button
+            android:id="@+id/column6"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="V6"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
