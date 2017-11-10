@@ -1,0 +1,61 @@
+public void checkWin(TextView[][] arr){
+
+        //Horizontal check
+        for(int j=0; j<4; j++){
+            for(int i=0; i<6; i++){
+                if(arr[i][j].getText().toString().equals("1") && arr[i][j+1].getText().toString().equals("1")&&
+                        arr[i][j+2].getText().toString().equals("1")&& arr[i][j+3].getText().toString().equals("1")){
+                    Toast.makeText(this, "Player 1 wins!", Toast.LENGTH_SHORT).show();
+                }
+                if(arr[i][j].getText().toString().equals("2") && arr[i][j+1].getText().toString().equals("2")&&
+                        arr[i][j+2].getText().toString().equals("2")&& arr[i][j+3].getText().toString().equals("2")){
+                    Toast.makeText(this, "Player 2 wins!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        }
+
+        //Vertical check
+        for(int i=0; i<3; i++){
+            for(int j=0; j<7; j++){
+                if(arr[i][j].getText().toString().equals("1") && arr[i+1][j].getText().toString().equals("1")&&
+                        arr[i+2][j].getText().toString().equals("1")&& arr[i+3][j].getText().toString().equals("1")){
+                    Toast.makeText(this, "Player 1 wins!", Toast.LENGTH_SHORT).show();
+                }
+                if(arr[i][j].getText().toString().equals("2") && arr[i+1][j].getText().toString().equals("2")&&
+                        arr[i+2][j].getText().toString().equals("2")&& arr[i+3][j].getText().toString().equals("2")){
+                    Toast.makeText(this, "Player 2 wins!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        }
+
+
+        //Diagonal ascend check
+        for(int i=3; i<6; i++){
+            for(int j=0; j<4; j++){
+                if(arr[i][j].getText().toString().equals("1") && arr[i-1][j+1].getText().toString().equals("1")&&
+                        arr[i-2][j+2].getText().toString().equals("1")&& arr[i-3][j+3].getText().toString().equals("1")){
+                    Toast.makeText(this, "Player 1 wins!", Toast.LENGTH_SHORT).show();
+                }
+                if(arr[i][j].getText().toString().equals("2") && arr[i-1][j+1].getText().toString().equals("2")&&
+                        arr[i-2][j+2].getText().toString().equals("2")&& arr[i-3][j+3].getText().toString().equals("2")){
+                    Toast.makeText(this, "Player 2 wins!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        }
+
+        //Diagonal descend check
+        for(int i=3; i<6; i++){
+            for(int j=3; j<7; j++){
+                if(arr[i][j].getText().toString().equals("1") && arr[i-1][j-1].getText().toString().equals("1")&&
+                        arr[i-2][j-2].getText().toString().equals("1")&& arr[i-3][j-3].getText().toString().equals("1")){
+                    Toast.makeText(this, "Player 1 wins!", Toast.LENGTH_SHORT).show();
+                }
+                if(arr[i][j].getText().toString().equals("2") && arr[i-1][j-1].getText().toString().equals("2")&&
+                        arr[i-2][j-2].getText().toString().equals("2")&& arr[i-3][j-3].getText().toString().equals("2")){
+                    Toast.makeText(this, "Player 2 wins!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        }
+
+
+    }
